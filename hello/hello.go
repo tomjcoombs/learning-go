@@ -12,9 +12,10 @@ func main() {
 	log.SetFlags(0)
 
 	// a slice of names 
-	names := []string{"timmy", "tiny", "tony", ""}
+	// names := []string{"timmy", "tiny", "tony", ""}
 
-	messages, err := greetings.Hellos(names)
+	// messages, err := greetings.Hellos(names)
+	message, err := greetings.Hello("Tommy")
 
 	// if there are no errors
 	if err != nil {
@@ -22,5 +23,5 @@ func main() {
 	}
 
 	// otherwise print the message
-	fmt.Println(messages)
+	fmt.Println(message)
 }
